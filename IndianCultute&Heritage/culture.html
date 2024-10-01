@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Indian Culture</title>
+    <style>
+        /* Additional styles for cards to appear side by side */
+        .festival-container,
+        .cuisine-container,
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows the cards to wrap onto the next line if needed */
+            justify-content: space-between; /* Adjust spacing between the cards */
+            margin: 20px 0; /* Space above and below the containers */
+        }
+
+        .festival-card,
+        .cuisine-container .card,
+        .gallery-card {
+            flex: 1 1 calc(24% - 20px); /* Adjust this value for how many cards you want per row */
+            margin: 10px; /* Margin around individual cards */
+            box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+            height: 300px; /* Fixed height for uniformity */
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Space out content */
+        }
+
+        .festival-img,
+        .cultural-image,
+        .gallery-img {
+            max-width: 100%; /* Responsive image size */
+            height: 150px; /* Fixed height for images */
+            object-fit: cover; /* Cover the area of the card */
+            border-radius: 5px; /* Rounded corners for images */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Indian Culture</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="monuments.html">Monuments</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cultural-overview">
+            <h2>Overview of Indian Culture</h2>
+            <p>India is a land of diverse cultures and traditions, where every region has its unique identity. From colorful festivals to rich culinary experiences, Indian culture is a beautiful tapestry woven from history, spirituality, and artistry.</p>
+            <div class="card">
+                <img src="assets/images/indian_culture.jpeg" alt="Indian Culture" class="cultural-image">
+            </div>
+        </section>
+
+        <section id="festivals">
+            <h2>Festivals</h2>
+            <div class="festival-container">
+                <div class="festival-card">
+                    <div class="card">
+                        <img src="assets/images/diwali1.jpeg" alt="Diwali" class="festival-img">
+                        <h3>Diwali</h3>
+                        <p>The festival of lights celebrated with great enthusiasm across India.</p>
+                    </div>
+                </div>
+                <div class="festival-card">
+                    <div class="card">
+                        <img src="assets/images/holi1.jpeg" alt="Holi" class="festival-img">
+                        <h3>Holi</h3>
+                        <p>The festival of colors, symbolizing the arrival of spring.</p>
+                    </div>
+                </div>
+                <!-- Add more festival cards as needed -->
+            </div>
+        </section>
+
+        <section id="cuisine">
+            <h2>Cuisine</h2>
+            <p>Indian cuisine is as diverse as its culture, with a variety of flavors and regional specialties.</p>
+            <div class="cuisine-container">
+                <div class="card">
+                    <img src="assets/images/cuisine_image.jpeg" alt="Indian Cuisine" class="cultural-image">
+                    <h3>North Indian</h3>
+                    <p>Known for its rich gravies and breads.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/images/south_indian_cuisine.jpeg" alt="South Indian Cuisine" class="cultural-image">
+                    <h3>South Indian</h3>
+                    <p>Famous for rice-based dishes and dosas.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/images/east_indian_cuisine.jpeg" alt="East Indian Cuisine" class="cultural-image">
+                    <h3>East Indian</h3>
+                    <p>Known for sweets and fish dishes.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/images/west_indian_cuisine.jpeg" alt="West Indian Cuisine" class="cultural-image">
+                    <h3>West Indian</h3>
+                    <p>Famous for spicy and savory snacks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="art-and-craft">
+            <h2>Art and Craft</h2>
+            <p>Explore traditional Indian handicrafts, including pottery, weaving, and painting.</p>
+            <div class="card">
+                <img src="assets/images/art_crafts1.jpeg" alt="Art and Craft" class="cultural-image">
+            </div>
+        </section>
+
+        <section id="dance-and-music">
+            <h2>Dance and Music</h2>
+            <p>Experience the rich variety of dance forms like Bharatanatyam, Kathak, and folk dances, along with traditional music.</p>
+            <div class="card">
+                <img src="assets/images/dance_music.jpeg" alt="Dance and Music" class="cultural-image">
+            </div>
+        </section>
+
+        <section id="quotes">
+            <h2>Quotes on Culture</h2>
+            <blockquote>
+                <p>"Culture is the widening of the mind and of the spirit." - Jawaharlal Nehru</p>
+            </blockquote>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-card">
+                    <div class="card">
+                        <img src="assets/images/art1.jpeg" alt="Gallery Image 1" class="gallery-img">
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="card">
+                        <img src="assets/images/art2.jpeg" alt="Gallery Image 2" class="gallery-img">
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="card">
+                        <img src="assets/images/art3.jpeg" alt="Gallery Image 3" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="call-to-action">
+            <h2>Join Us in Celebrating Indian Culture!</h2>
+            <p>Stay updated on upcoming cultural events. <a href="events.html">Click here</a> to learn more.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: info@indianculture.com | Phone: +91-9176458702</p>
+        <p>&copy; Indian Cultural and Heritage Management System</p>
+    </footer>
+</body>
+
+</html>

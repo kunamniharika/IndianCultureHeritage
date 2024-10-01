@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Event Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Event Registration</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="monuments.html">Monuments</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Register for Event</h2>
+        <form id="registration-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="event">Event:</label>
+            <input type="text" id="event" name="event" readonly value="" />
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>Contact us: info@indianculture.com | Phone: +91-9176458702</p>
+        <p>&copy; Indian Cultural and Heritage Management System</p>
+    </footer>
+    <script>
+        // Function to get the event name from the URL and populate the event field
+        const urlParams = new URLSearchParams(window.location.search);
+        const eventName = urlParams.get('event');
+        document.getElementById('event').value = eventName ? eventName : 'Unknown Event';
+    </script>
+</body>
+</html>
